@@ -1,0 +1,25 @@
+{
+  "name": "express-server-vercel",
+  "version": "1.0.0",
+  "description": "Servidor Express para deploy no Vercel",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "babel src --out-dir dist",
+    "vercel-build": "babel src --out-dir dist"
+  },
+  "dependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/cli": "^7.23.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
