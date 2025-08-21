@@ -1,6 +1,0 @@
-{
-  "watch": ["api"],
-  "ext": "js,json",
-  "ignore": ["node_modules"],
-  "exec": "babel-node api/index.js"
-}
